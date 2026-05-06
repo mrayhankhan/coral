@@ -133,6 +133,7 @@ impl CompiledBackendSource for FileCompiledSource {
             table_functions: HashMap::default(),
             source: RegisteredSource {
                 schema_name: self.manifest.common.name.clone(),
+                source_version: self.manifest.common.version.clone(),
                 tables: table_infos,
                 table_functions: vec![],
                 inputs,
